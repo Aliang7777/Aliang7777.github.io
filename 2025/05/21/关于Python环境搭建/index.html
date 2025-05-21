@@ -1,0 +1,682 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Lyon Ye">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="1.Python概述Python是一种高级编程语言，由吉多·范罗苏姆于1980年代末至1990年代初设计，并于1991年首次发布。它以其简洁、易读和强大的特性而闻名，广泛用于Web开发、数据科学、自动化脚本、人工智能等领域。2.Python的特点🐍简单易学🐍简单易学Python的语法设计简洁，代码易读易写，非常适合初学者学习编程。开放源码Python是一种开源软件，用户可以自由下载、使用和修">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于Python环境搭建">
+<meta property="og:url" content="https://aliang7777.github.io/2025/05/21/%E5%85%B3%E4%BA%8EPython%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.Python概述Python是一种高级编程语言，由吉多·范罗苏姆于1980年代末至1990年代初设计，并于1991年首次发布。它以其简洁、易读和强大的特性而闻名，广泛用于Web开发、数据科学、自动化脚本、人工智能等领域。2.Python的特点🐍简单易学🐍简单易学Python的语法设计简洁，代码易读易写，非常适合初学者学习编程。开放源码Python是一种开源软件，用户可以自由下载、使用和修">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://lyonye777.site/PicGo/pythonlogo.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/pipinstall.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/pythonexe.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/pythonsetup.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/pythonsetup2.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/pythonsetup3.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/pythonsetup4.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/Win+R.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/cmd.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/pycharmdl.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/pycharmexe.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/pycharmsetup1.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/pycharmsetup2.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/pycharmsetup3.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/pycharmsetup4.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/pycharmsetupo.png">
+<meta property="og:image" content="https://lyonye777.site/PicGo/pycharmexeo.png">
+<meta property="article:published_time" content="2025-05-21T10:09:00.000Z">
+<meta property="article:modified_time" content="2025-05-21T12:49:00.917Z">
+<meta property="article:author" content="Lyon Ye">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lyonye777.site/PicGo/pythonlogo.png">
+  
+  
+  
+  <title>关于Python环境搭建 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"aliang7777.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="关于Python环境搭建"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-05-21 18:09" pubdate>
+          May 21, 2025 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          974 words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          9 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">关于Python环境搭建</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p><img src="https://lyonye777.site/PicGo/pythonlogo.png" srcset="/img/loading.gif" lazyload></p>
+<h1 id="1-Python概述"><a href="#1-Python概述" class="headerlink" title="1.Python概述"></a>1.Python概述</h1><h2 id="Python是一种高级编程语言，由吉多·范罗苏姆于1980年代末至1990年代初设计，并于1991年首次发布。它以其简洁、易读和强大的特性而闻名，广泛用于Web开发、数据科学、自动化脚本、人工智能等领域。"><a href="#Python是一种高级编程语言，由吉多·范罗苏姆于1980年代末至1990年代初设计，并于1991年首次发布。它以其简洁、易读和强大的特性而闻名，广泛用于Web开发、数据科学、自动化脚本、人工智能等领域。" class="headerlink" title="Python是一种高级编程语言，由吉多·范罗苏姆于1980年代末至1990年代初设计，并于1991年首次发布。它以其简洁、易读和强大的特性而闻名，广泛用于Web开发、数据科学、自动化脚本、人工智能等领域。"></a>Python是一种高级编程语言，由吉多·范罗苏姆于1980年代末至1990年代初设计，并于1991年首次发布。它以其简洁、易读和强大的特性而闻名，广泛用于Web开发、数据科学、自动化脚本、人工智能等领域。</h2><h1 id="2-Python的特点"><a href="#2-Python的特点" class="headerlink" title="2.Python的特点"></a>2.Python的特点</h1><h2 id="🐍简单易学🐍"><a href="#🐍简单易学🐍" class="headerlink" title="🐍简单易学🐍"></a>🐍简单易学🐍</h2><p>简单易学<br>Python的语法设计简洁，代码易读易写，非常适合初学者学习编程。<br>开放源码<br>Python是一种开源软件，用户可以自由下载、使用和修改它的源代码。<br>跨平台<br>Python能够在Windows、Mac OS和各种Linux操作系统上运行，实现了一次编写到处运行。<br>解释型语言<br>Python是解释型语言，这意味着Python代码在运行时逐行解释执行，而不需要先编译成机器代<br>码。<br>动态类型<br>Python使用动态类型系统，变量在使用前不需要声明类型，类型是在运行时确定的。<br>面向对象<br>Python支持面向对象编程，允许定义类和对象，支持继承、多态和封装等特性。<br>丰富的标准库<br>Python提供了丰富的标准库，涵盖了网络编程、文件I&#x2F;O、GUI、数据库等多个领域，极大地提高了开发效率。</p>
+<h2 id="☁️开放源码☁️"><a href="#☁️开放源码☁️" class="headerlink" title="☁️开放源码☁️"></a>☁️开放源码☁️</h2><h1 id="3-Python解析器安装"><a href="#3-Python解析器安装" class="headerlink" title="3.Python解析器安装"></a>3.Python解析器安装</h1><h2 id="Python解析器下载地址：https-www-python-org-downloads-windows-访问官方网站，找到对应下载选项，如下所示，根据自己的电脑系统和电脑位数下载对应的版本即可。"><a href="#Python解析器下载地址：https-www-python-org-downloads-windows-访问官方网站，找到对应下载选项，如下所示，根据自己的电脑系统和电脑位数下载对应的版本即可。" class="headerlink" title="Python解析器下载地址：https://www.python.org/downloads/windows/ 访问官方网站，找到对应下载选项，如下所示，根据自己的电脑系统和电脑位数下载对应的版本即可。"></a>Python解析器下载地址：<a target="_blank" rel="noopener" href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a> 访问官方网站，找到对应下载选项，如下所示，根据自己的电脑系统和电脑位数下载对应的版本即可。</h2><p><img src="https://lyonye777.site/PicGo/pipinstall.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="下载好的效果如下所示："><a href="#下载好的效果如下所示：" class="headerlink" title="下载好的效果如下所示："></a>下载好的效果如下所示：</h2><p><img src="https://lyonye777.site/PicGo/pythonexe.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="双击下载好的Python解析器，出现如下效果，先在”Use-admin…和Add-python-exe-to-PATH”前打勾，然后在点击“Customize-installation”。"><a href="#双击下载好的Python解析器，出现如下效果，先在”Use-admin…和Add-python-exe-to-PATH”前打勾，然后在点击“Customize-installation”。" class="headerlink" title="双击下载好的Python解析器，出现如下效果，先在”Use admin…和Add python.exe to PATH”前打勾，然后在点击“Customize installation”。"></a>双击下载好的Python解析器，出现如下效果，先在”Use admin…和Add python.exe to PATH”前打勾，然后在点击“Customize installation”。</h3><p><img src="https://lyonye777.site/PicGo/pythonsetup.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="点击“Customize-installation”后，跳转出现如下界面，此界面点击不做任何操作，默认点击Next即可。"><a href="#点击“Customize-installation”后，跳转出现如下界面，此界面点击不做任何操作，默认点击Next即可。" class="headerlink" title="点击“Customize installation”后，跳转出现如下界面，此界面点击不做任何操作，默认点击Next即可。"></a>点击“Customize installation”后，跳转出现如下界面，此界面点击不做任何操作，默认点击Next即可。</h3><p><img src="https://lyonye777.site/PicGo/pythonsetup2.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="点击Next后出现如下界面，首先勾选“Install-for-all-user”，然后在“Customize-install-location”中选择安装路径-路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已-，最后点击Install即可。"><a href="#点击Next后出现如下界面，首先勾选“Install-for-all-user”，然后在“Customize-install-location”中选择安装路径-路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已-，最后点击Install即可。" class="headerlink" title="点击Next后出现如下界面，首先勾选“Install for all user”，然后在“Customize install location”中选择安装路径(路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已)，最后点击Install即可。"></a>点击Next后出现如下界面，首先勾选“Install for all user”，然后在“Customize install location”中选择安装路径(路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已)，最后点击Install即可。</h3><p><img src="https://lyonye777.site/PicGo/pythonsetup3.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="出现如下界面，表示安装成功，点击“Close”关闭即可。"><a href="#出现如下界面，表示安装成功，点击“Close”关闭即可。" class="headerlink" title="出现如下界面，表示安装成功，点击“Close”关闭即可。"></a>出现如下界面，表示安装成功，点击“Close”关闭即可。</h3><p><img src="https://lyonye777.site/PicGo/pythonsetup4.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="测试Python解析器是否安装成功，在电脑上进入DOM命令行下-WIN-R键打开-，在命令行中输入“Python”回车，如出现如下信息，证明Python解析器安装成功。"><a href="#测试Python解析器是否安装成功，在电脑上进入DOM命令行下-WIN-R键打开-，在命令行中输入“Python”回车，如出现如下信息，证明Python解析器安装成功。" class="headerlink" title="测试Python解析器是否安装成功，在电脑上进入DOM命令行下(WIN+R键打开)，在命令行中输入“Python”回车，如出现如下信息，证明Python解析器安装成功。"></a>测试Python解析器是否安装成功，在电脑上进入DOM命令行下(WIN+R键打开)，在命令行中输入“Python”回车，如出现如下信息，证明Python解析器安装成功。</h2><p><img src="https://lyonye777.site/PicGo/Win+R.png" srcset="/img/loading.gif" lazyload><br><img src="https://lyonye777.site/PicGo/cmd.png" srcset="/img/loading.gif" lazyload></p>
+<h1 id="4-PyCharm编译器安装"><a href="#4-PyCharm编译器安装" class="headerlink" title="4.PyCharm编译器安装"></a>4.PyCharm编译器安装</h1><p>PyCharm是一种Python IDE，带有一整套可以帮助用户在使用Python语言开发时提高其效率的工具，比如调试、语法高亮、Project管理、代码跳转、智能提示、自动完成、单元测试、版本控制。此外，该IDE提供了一些高级功能，以用于支持Django框架下的专业Web开发。 下载地址：<a target="_blank" rel="noopener" href="https://www.jetbrains.com/pycharm/">https://www.jetbrains.com/pycharm/</a> 点击Download按钮，进行下载，可以免费试用30天，也可以往下拉，下载免费的社区版即可。<br><img src="https://lyonye777.site/PicGo/pycharmdl.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="下载好的PyCharm编译器如下："><a href="#下载好的PyCharm编译器如下：" class="headerlink" title="下载好的PyCharm编译器如下："></a>下载好的PyCharm编译器如下：</h3><p><img src="https://lyonye777.site/PicGo/pycharmexe.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="双击PyCharm安装包，出现如下效果，点击“下一步”即可。"><a href="#双击PyCharm安装包，出现如下效果，点击“下一步”即可。" class="headerlink" title="双击PyCharm安装包，出现如下效果，点击“下一步”即可。"></a>双击PyCharm安装包，出现如下效果，点击“下一步”即可。</h2><p><img src="https://lyonye777.site/PicGo/pycharmsetup1.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="点击“下一步”之后，出现如下界面，首先选择安装的路径-路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已-，然后点击“下一步”，如下所示。"><a href="#点击“下一步”之后，出现如下界面，首先选择安装的路径-路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已-，然后点击“下一步”，如下所示。" class="headerlink" title="点击“下一步”之后，出现如下界面，首先选择安装的路径(路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已)，然后点击“下一步”，如下所示。"></a>点击“下一步”之后，出现如下界面，首先选择安装的路径(路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已)，然后点击“下一步”，如下所示。</h3><p><img src="https://lyonye777.site/PicGo/pycharmsetup2.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="点击“下一步”之后，出现如下界面，首先将所有的选项打上勾，然后点击“下一步”，如下所示。"><a href="#点击“下一步”之后，出现如下界面，首先将所有的选项打上勾，然后点击“下一步”，如下所示。" class="headerlink" title="点击“下一步”之后，出现如下界面，首先将所有的选项打上勾，然后点击“下一步”，如下所示。"></a>点击“下一步”之后，出现如下界面，首先将所有的选项打上勾，然后点击“下一步”，如下所示。</h3><p><img src="https://lyonye777.site/PicGo/pycharmsetup3.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="点击“下一步”之后，出现如下界面，点击“安装”，如下所示。"><a href="#点击“下一步”之后，出现如下界面，点击“安装”，如下所示。" class="headerlink" title="点击“下一步”之后，出现如下界面，点击“安装”，如下所示。"></a>点击“下一步”之后，出现如下界面，点击“安装”，如下所示。</h3><p><img src="https://lyonye777.site/PicGo/pycharmsetup4.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="安装完成后，点击“完成”按钮，如下所示。"><a href="#安装完成后，点击“完成”按钮，如下所示。" class="headerlink" title="安装完成后，点击“完成”按钮，如下所示。"></a>安装完成后，点击“完成”按钮，如下所示。</h2><p><img src="https://lyonye777.site/PicGo/pycharmsetupo.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="双击快捷图标后，出现如下界面，勾选同意协议，点击“继续”按钮，如下所示。点击“继续”按钮后，出现如下界面，点击“Start-Free-30-Day-Trial”按钮，先免费试用30天。（后续可以说如何破解）"><a href="#双击快捷图标后，出现如下界面，勾选同意协议，点击“继续”按钮，如下所示。点击“继续”按钮后，出现如下界面，点击“Start-Free-30-Day-Trial”按钮，先免费试用30天。（后续可以说如何破解）" class="headerlink" title="双击快捷图标后，出现如下界面，勾选同意协议，点击“继续”按钮，如下所示。点击“继续”按钮后，出现如下界面，点击“Start Free 30-Day Trial”按钮，先免费试用30天。（后续可以说如何破解）"></a>双击快捷图标后，出现如下界面，勾选同意协议，点击“继续”按钮，如下所示。点击“继续”按钮后，出现如下界面，点击“Start Free 30-Day Trial”按钮，先免费试用30天。（后续可以说如何破解）</h2><p><img src="https://lyonye777.site/PicGo/pycharmexeo.png" srcset="/img/loading.gif" lazyload></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>关于Python环境搭建</div>
+      <div>https://aliang7777.github.io/2025/05/21/关于Python环境搭建/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>Lyon Ye</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>May 21, 2025</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/05/18/%E5%85%B3%E4%BA%8EPython%E6%B7%B1%E5%85%A5%E5%AD%A6%E4%B9%A0%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E6%A1%88%E4%BE%8B%E7%9A%84%E5%88%86%E4%BA%AB%E5%92%8C%E5%8F%8D%E6%80%9D/" title="关于Python深入学习人脸识别案例的分享和反思">
+                        <span class="hidden-mobile">关于Python深入学习人脸识别案例的分享和反思</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'Aliang7777/Aliang7777.github.io');
+      s.setAttribute('issue-term', 'pathname');
+      
+      s.setAttribute('label', '💬评论');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
+    })
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
