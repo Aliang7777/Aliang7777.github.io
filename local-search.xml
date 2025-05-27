@@ -11,6 +11,26 @@
     <content type="html"><![CDATA[<p><img src="https://img.lyonye777.site/PicGo/pythonlogo.png"></p><h1 id="1-Python概述"><a href="#1-Python概述" class="headerlink" title="1.Python概述"></a>1.Python概述</h1><h2 id="Python是一种高级编程语言，由吉多·范罗苏姆于1980年代末至1990年代初设计，并于1991年首次发布。它以其简洁、易读和强大的特性而闻名，广泛用于Web开发、数据科学、自动化脚本、人工智能等领域。"><a href="#Python是一种高级编程语言，由吉多·范罗苏姆于1980年代末至1990年代初设计，并于1991年首次发布。它以其简洁、易读和强大的特性而闻名，广泛用于Web开发、数据科学、自动化脚本、人工智能等领域。" class="headerlink" title="Python是一种高级编程语言，由吉多·范罗苏姆于1980年代末至1990年代初设计，并于1991年首次发布。它以其简洁、易读和强大的特性而闻名，广泛用于Web开发、数据科学、自动化脚本、人工智能等领域。"></a>Python是一种高级编程语言，由吉多·范罗苏姆于1980年代末至1990年代初设计，并于1991年首次发布。它以其简洁、易读和强大的特性而闻名，广泛用于Web开发、数据科学、自动化脚本、人工智能等领域。</h2><h1 id="2-Python的特点"><a href="#2-Python的特点" class="headerlink" title="2.Python的特点"></a>2.Python的特点</h1><h2 id="🐍简单易学🐍"><a href="#🐍简单易学🐍" class="headerlink" title="🐍简单易学🐍"></a>🐍简单易学🐍</h2><p>简单易学<br>Python的语法设计简洁，代码易读易写，非常适合初学者学习编程。<br>开放源码<br>Python是一种开源软件，用户可以自由下载、使用和修改它的源代码。<br>跨平台<br>Python能够在Windows、Mac OS和各种Linux操作系统上运行，实现了一次编写到处运行。<br>解释型语言<br>Python是解释型语言，这意味着Python代码在运行时逐行解释执行，而不需要先编译成机器代<br>码。<br>动态类型<br>Python使用动态类型系统，变量在使用前不需要声明类型，类型是在运行时确定的。<br>面向对象<br>Python支持面向对象编程，允许定义类和对象，支持继承、多态和封装等特性。<br>丰富的标准库<br>Python提供了丰富的标准库，涵盖了网络编程、文件I&#x2F;O、GUI、数据库等多个领域，极大地提高了开发效率。</p><h2 id="☁️开放源码☁️"><a href="#☁️开放源码☁️" class="headerlink" title="☁️开放源码☁️"></a>☁️开放源码☁️</h2><h1 id="3-Python解析器安装"><a href="#3-Python解析器安装" class="headerlink" title="3.Python解析器安装"></a>3.Python解析器安装</h1><h2 id="Python解析器下载地址：https-www-python-org-downloads-windows-访问官方网站，找到对应下载选项，如下所示，根据自己的电脑系统和电脑位数下载对应的版本即可。"><a href="#Python解析器下载地址：https-www-python-org-downloads-windows-访问官方网站，找到对应下载选项，如下所示，根据自己的电脑系统和电脑位数下载对应的版本即可。" class="headerlink" title="Python解析器下载地址：https://www.python.org/downloads/windows/ 访问官方网站，找到对应下载选项，如下所示，根据自己的电脑系统和电脑位数下载对应的版本即可。"></a>Python解析器下载地址：<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a> 访问官方网站，找到对应下载选项，如下所示，根据自己的电脑系统和电脑位数下载对应的版本即可。</h2><p><img src="https://img.lyonye777.site/PicGo/pipinstall.png"></p><h2 id="下载好的效果如下所示："><a href="#下载好的效果如下所示：" class="headerlink" title="下载好的效果如下所示："></a>下载好的效果如下所示：</h2><p><img src="https://img.lyonye777.site/PicGo/pythonexe.png"></p><h3 id="双击下载好的Python解析器，出现如下效果，先在”Use-admin…和Add-python-exe-to-PATH”前打勾，然后在点击“Customize-installation”。"><a href="#双击下载好的Python解析器，出现如下效果，先在”Use-admin…和Add-python-exe-to-PATH”前打勾，然后在点击“Customize-installation”。" class="headerlink" title="双击下载好的Python解析器，出现如下效果，先在”Use admin…和Add python.exe to PATH”前打勾，然后在点击“Customize installation”。"></a>双击下载好的Python解析器，出现如下效果，先在”Use admin…和Add python.exe to PATH”前打勾，然后在点击“Customize installation”。</h3><p><img src="https://img.lyonye777.site/PicGo/pythonsetup.png"></p><h3 id="点击“Customize-installation”后，跳转出现如下界面，此界面点击不做任何操作，默认点击Next即可。"><a href="#点击“Customize-installation”后，跳转出现如下界面，此界面点击不做任何操作，默认点击Next即可。" class="headerlink" title="点击“Customize installation”后，跳转出现如下界面，此界面点击不做任何操作，默认点击Next即可。"></a>点击“Customize installation”后，跳转出现如下界面，此界面点击不做任何操作，默认点击Next即可。</h3><p><img src="https://img.lyonye777.site/PicGo/pythonsetup2.png"></p><h3 id="点击Next后出现如下界面，首先勾选“Install-for-all-user”，然后在“Customize-install-location”中选择安装路径-路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已-，最后点击Install即可。"><a href="#点击Next后出现如下界面，首先勾选“Install-for-all-user”，然后在“Customize-install-location”中选择安装路径-路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已-，最后点击Install即可。" class="headerlink" title="点击Next后出现如下界面，首先勾选“Install for all user”，然后在“Customize install location”中选择安装路径(路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已)，最后点击Install即可。"></a>点击Next后出现如下界面，首先勾选“Install for all user”，然后在“Customize install location”中选择安装路径(路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已)，最后点击Install即可。</h3><p><img src="https://img.lyonye777.site/PicGo/pythonsetup3.png"></p><h3 id="出现如下界面，表示安装成功，点击“Close”关闭即可。"><a href="#出现如下界面，表示安装成功，点击“Close”关闭即可。" class="headerlink" title="出现如下界面，表示安装成功，点击“Close”关闭即可。"></a>出现如下界面，表示安装成功，点击“Close”关闭即可。</h3><p><img src="https://img.lyonye777.site/PicGo/pythonsetup4.png"></p><h2 id="测试Python解析器是否安装成功，在电脑上进入DOM命令行下-WIN-R键打开-，在命令行中输入“Python”回车，如出现如下信息，证明Python解析器安装成功。"><a href="#测试Python解析器是否安装成功，在电脑上进入DOM命令行下-WIN-R键打开-，在命令行中输入“Python”回车，如出现如下信息，证明Python解析器安装成功。" class="headerlink" title="测试Python解析器是否安装成功，在电脑上进入DOM命令行下(WIN+R键打开)，在命令行中输入“Python”回车，如出现如下信息，证明Python解析器安装成功。"></a>测试Python解析器是否安装成功，在电脑上进入DOM命令行下(WIN+R键打开)，在命令行中输入“Python”回车，如出现如下信息，证明Python解析器安装成功。</h2><p><img src="https://img.lyonye777.site/PicGo/Win+R.png"><br><img src="https://img.lyonye777.site/PicGo/cmd.png"></p><h1 id="4-PyCharm编译器安装"><a href="#4-PyCharm编译器安装" class="headerlink" title="4.PyCharm编译器安装"></a>4.PyCharm编译器安装</h1><p>PyCharm是一种Python IDE，带有一整套可以帮助用户在使用Python语言开发时提高其效率的工具，比如调试、语法高亮、Project管理、代码跳转、智能提示、自动完成、单元测试、版本控制。此外，该IDE提供了一些高级功能，以用于支持Django框架下的专业Web开发。 下载地址：<a href="https://www.jetbrains.com/pycharm/">https://www.jetbrains.com/pycharm/</a> 点击Download按钮，进行下载，可以免费试用30天，也可以往下拉，下载免费的社区版即可。<br><img src="https://img.lyonye777.site/PicGo/pycharmdl.png"></p><h3 id="下载好的PyCharm编译器如下："><a href="#下载好的PyCharm编译器如下：" class="headerlink" title="下载好的PyCharm编译器如下："></a>下载好的PyCharm编译器如下：</h3><p><img src="https://img.lyonye777.site/PicGo/pycharmexe.png"></p><h2 id="双击PyCharm安装包，出现如下效果，点击“下一步”即可。"><a href="#双击PyCharm安装包，出现如下效果，点击“下一步”即可。" class="headerlink" title="双击PyCharm安装包，出现如下效果，点击“下一步”即可。"></a>双击PyCharm安装包，出现如下效果，点击“下一步”即可。</h2><p><img src="https://img.lyonye777.site/PicGo/pycharmsetup1.png"></p><h3 id="点击“下一步”之后，出现如下界面，首先选择安装的路径-路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已-，然后点击“下一步”，如下所示。"><a href="#点击“下一步”之后，出现如下界面，首先选择安装的路径-路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已-，然后点击“下一步”，如下所示。" class="headerlink" title="点击“下一步”之后，出现如下界面，首先选择安装的路径(路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已)，然后点击“下一步”，如下所示。"></a>点击“下一步”之后，出现如下界面，首先选择安装的路径(路径不要出现中文，可以不用安装在C盘，我这里是因为我这有一个C盘而已)，然后点击“下一步”，如下所示。</h3><p><img src="https://img.lyonye777.site/PicGo/pycharmsetup2.png"></p><h3 id="点击“下一步”之后，出现如下界面，首先将所有的选项打上勾，然后点击“下一步”，如下所示。"><a href="#点击“下一步”之后，出现如下界面，首先将所有的选项打上勾，然后点击“下一步”，如下所示。" class="headerlink" title="点击“下一步”之后，出现如下界面，首先将所有的选项打上勾，然后点击“下一步”，如下所示。"></a>点击“下一步”之后，出现如下界面，首先将所有的选项打上勾，然后点击“下一步”，如下所示。</h3><p><img src="https://img.lyonye777.site/PicGo/pycharmsetup3.png"></p><h3 id="点击“下一步”之后，出现如下界面，点击“安装”，如下所示。"><a href="#点击“下一步”之后，出现如下界面，点击“安装”，如下所示。" class="headerlink" title="点击“下一步”之后，出现如下界面，点击“安装”，如下所示。"></a>点击“下一步”之后，出现如下界面，点击“安装”，如下所示。</h3><p><img src="https://img.lyonye777.site/PicGo/pycharmsetup4.png"></p><h2 id="安装完成后，点击“完成”按钮，如下所示。"><a href="#安装完成后，点击“完成”按钮，如下所示。" class="headerlink" title="安装完成后，点击“完成”按钮，如下所示。"></a>安装完成后，点击“完成”按钮，如下所示。</h2><p><img src="https://img.lyonye777.site/PicGo/pycharmsetupo.png"></p><h2 id="双击快捷图标后，出现如下界面，勾选同意协议，点击“继续”按钮，如下所示。点击“继续”按钮后，出现如下界面，点击“Start-Free-30-Day-Trial”按钮，先免费试用30天。（后续可以说如何破解）"><a href="#双击快捷图标后，出现如下界面，勾选同意协议，点击“继续”按钮，如下所示。点击“继续”按钮后，出现如下界面，点击“Start-Free-30-Day-Trial”按钮，先免费试用30天。（后续可以说如何破解）" class="headerlink" title="双击快捷图标后，出现如下界面，勾选同意协议，点击“继续”按钮，如下所示。点击“继续”按钮后，出现如下界面，点击“Start Free 30-Day Trial”按钮，先免费试用30天。（后续可以说如何破解）"></a>双击快捷图标后，出现如下界面，勾选同意协议，点击“继续”按钮，如下所示。点击“继续”按钮后，出现如下界面，点击“Start Free 30-Day Trial”按钮，先免费试用30天。（后续可以说如何破解）</h2><p><img src="https://img.lyonye777.site/PicGo/pycharmexeo.png"></p>]]></content>
     
     
+    <categories>
+      
+      <category>Personal</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+      <tag>测试</tag>
+      
+      <tag>personal growth</tag>
+      
+      <tag>programming</tag>
+      
+      <tag>python</tag>
+      
+    </tags>
     
   </entry>
   
@@ -37,6 +57,8 @@
       
       <tag>测试</tag>
       
+      <tag>Beauty</tag>
+      
     </tags>
     
   </entry>
@@ -51,6 +73,18 @@
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
+    <categories>
+      
+      <category>Public</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+    </tags>
     
   </entry>
   
