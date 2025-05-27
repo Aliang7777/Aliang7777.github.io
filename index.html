@@ -64,7 +64,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"aliang7777.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"aliang7777.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":["index"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -185,29 +185,30 @@
 
       
 
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="An elegant Material-Design theme for Hexo"></span>
-          
-        </div>
 
-        
+  <div id="banner" class="banner" parallax=true
+    style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="banner-text text-center fade-in-up">
+            <div class="h2">
+              
+                  <span id="subtitle">欢迎来到 LyonYe 的技术宇宙 👨‍💻🚀🎵</span>
+                  
+            </div>
+
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+            
+        </div>
       </div>
-
-      
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
-        </div>
-      
-    </div>
   </div>
-</div>
-
   </div>
   </header>
 
@@ -226,7 +227,13 @@
   <div class="row mx-auto index-card">
     
     
-    <article class="col-12 col-md-12 mx-auto index-info">
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2025/05/21/%E5%85%B3%E4%BA%8EPython%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" target="_self">
+          <img src="/img/default.png" srcset="/img/loading.gif" lazyload alt="关于Python环境搭建">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
       <h2 class="index-header">
         
         <a href="/2025/05/21/%E5%85%B3%E4%BA%8EPython%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" target="_self">
@@ -235,7 +242,7 @@
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/05/21/%E5%85%B3%E4%BA%8EPython%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" target="_self">
+      <a class="index-excerpt " href="/2025/05/21/%E5%85%B3%E4%BA%8EPython%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" target="_self">
         <div>
           1.Python概述Python是一种高级编程语言，由吉多·范罗苏姆于1980年代末至1990年代初设计，并于1991年首次发布。它以其简洁、易读和强大的特性而闻名，广泛用于Web开发、数据科学、自动化脚本、人工智能等领域。2.Python的特点🐍简单易学🐍简单易学Python的语法设计简洁，代码易读易写，非常适合初学者学习编程。开放源码Python是一种开源软件，用户可以自由下载、使用和修
         </div>
@@ -259,7 +266,13 @@
   <div class="row mx-auto index-card">
     
     
-    <article class="col-12 col-md-12 mx-auto index-info">
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2025/05/16/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
+          <img src="/img/default.png" srcset="/img/loading.gif" lazyload alt="我的第一篇博客">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
       <h2 class="index-header">
         
         <a href="/2025/05/16/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
@@ -268,7 +281,7 @@
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/05/16/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
+      <a class="index-excerpt " href="/2025/05/16/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
         <div>
           美女推荐hongkongdoll1 hongkongdoll2
         </div>
@@ -292,7 +305,13 @@
   <div class="row mx-auto index-card">
     
     
-    <article class="col-12 col-md-12 mx-auto index-info">
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2025/05/04/hello-world/" target="_self">
+          <img src="/img/default.png" srcset="/img/loading.gif" lazyload alt="Hello World">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
       <h2 class="index-header">
         
         <a href="/2025/05/04/hello-world/" target="_self">
@@ -301,7 +320,7 @@
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/05/04/hello-world/" target="_self">
+      <a class="index-excerpt " href="/2025/05/04/hello-world/" target="_self">
         <div>
           Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick
         </div>
@@ -398,21 +417,6 @@
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
 
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
 
 
 
